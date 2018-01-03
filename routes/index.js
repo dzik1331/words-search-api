@@ -3,9 +3,6 @@ var router = express.Router();
 var _ = require('lodash');
 var pgp = require('pg-promise')(/*options*/)
 var db = pgp('postgres://postgres:Qwert!2345@localhost:5432/words')
-// var db = pgp('postgres://p1069_words:Qwert!2345@pgsql15.mydevil.net:5432/p1069_words')
-
-
 
 /* GET home page. */
 router.post('/search', function(req, res, next) {
